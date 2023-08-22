@@ -43,7 +43,7 @@ function App() {
     // const provider = new WebrtcProvider("webrtc-test", doc, {
     //   signaling: ["ws://localhost:4444"],
     // });
-    const provider = new WebsocketProvider('wss://crdt-server-go6r6w663-prakrithi-shetty.vercel.app', 'my-roomname', doc);
+    const provider = new WebsocketProvider('ws://localhost:3001', 'my-roomname', doc)
     const type = doc.getText("monaco"); // doc { "monaco": "what our IDE is showing" }
     // Bind YJS to Monaco
     const binding = new MonacoBinding(
